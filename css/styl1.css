@@ -1,0 +1,52 @@
+
+.btn i, .fc button i, .ajax-upload-dragdrop .ajax-file-upload i, .swal2-modal .swal2-buttonswrapper .swal2-styled i, .swal2-modal .swal2-buttonswrapper .swal2-styled.swal2-confirm i, .swal2-modal .swal2-buttonswrapper .swal2-styled.swal2-cancel i, .wizard > .actions a i {
+    margin-right: 0px;}
+.btn-warning:not(.btn-light):not(.btn-secondary) {
+    color: #000;}
+.bg-info {
+    background-color: #0d1844 !important;}
+.img-xs {
+    width: 35px;
+    height: 35px;
+    margin-left: 10px;}
+.d-sm-block {
+    display: block !important;
+    margin-left: 20px;
+}
+.alert-info {
+    color: #fdfdff;
+    background-color: #4e13b3;
+    border-color: #e0d2f9;}
+.bg-dark {
+    background-color: #191c24 !important;}
+.popup1{
+width: 100%;
+position: fixed;
+z-index: 556566;
+background-color: rgba(0 ,0 ,0 , 0.4);
+height: 100%;
+top: 71px;
+overflow: hidden;
+left: 0px;
+  display: none; 
+}
+.popup1 .inner{
+position: fixed;
+width: auto;
+background-color: #191c24;
+left: 10%;
+height: 350px;
+top: 25%;
+right: 15%;
+
+overflow-y: auto;
+overflow-x: auto;
+}
+
+.form-control:focus, .asColorPicker-input:focus, .dataTables_wrapper select:focus, .jsgrid .jsgrid-table .jsgrid-filter-row input:focus[type="text"], .jsgrid .jsgrid-table .jsgrid-filter-row select:focus, .jsgrid .jsgrid-table .jsgrid-filter-row input:focus[type="number"], .select2-container--default .select2-selection--single:focus, .select2-container--default .select2-selection--single .select2-search__field:focus, .typeahead:focus, .tt-query:focus, .tt-hint:focus {
+
+color:#fff;
+
+}
+
+
