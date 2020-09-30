@@ -66,7 +66,7 @@ height: auto;">
                         </div>
                         <div class="content">
                             <div class="text"style="font-size: 16px">اجمالى المبلغ المطلوب دفعه</div>
-                            <div class="number count-to text-right" data-from="0"style="font-size: 15px" data-to="1225" data-speed="1000" data-fresh-interval="20"><?= isset($data2['rem_amount'])?$data2['rem_amount']:"المبلغ المطلوب غير مسجل";?></div>
+                            <div class="number count-to text-right" data-from="0"style="font-size: 15px" data-to="1225" data-speed="1000" data-fresh-interval="20"><?= isset($data2['rem_amount'])? number_format($data2['rem_amount']):"المبلغ المطلوب غير مسجل";?></div>
                         </div>
                     </div>
                 </div>
@@ -88,7 +88,7 @@ height: auto;">
                         </div>
                         <div class="content">
                             <div class="text"style="font-size: 16px">  مجموع الاقساط المدفوعه</div>
-                            <div class="number count-to text-right" data-from="0"style="font-size: 15px" data-to="1225" data-speed="1000" data-fresh-interval="20"><?=$getalldata['totalpay']?></div>
+                            <div class="number count-to text-right" data-from="0"style="font-size: 15px" data-to="1225" data-speed="1000" data-fresh-interval="20"><?=number_format($getalldata['totalpay'])?></div>
                         </div>
                     </div>
                 </div>
@@ -99,7 +99,7 @@ height: auto;">
                         </div>
                         <div class="content">
                             <div class="text"style="font-size: 16px">اجمالى  المبلغ المتبقى</div>
-                            <div class="number count-to text-right" data-from="0"style="font-size: 15px" data-to="1225" data-speed="1000" data-fresh-interval="20"><?=$totarem;?></div>
+                            <div class="number count-to text-right" data-from="0"style="font-size: 15px" data-to="1225" data-speed="1000" data-fresh-interval="20"><?=number_format($totarem)?></div>
                         </div>
                     </div>
                 </div>
@@ -143,7 +143,7 @@ height: auto;">
                         </div>
                         <div class="content">
                             <div class="text"style="font-size: 16px">صافى الربح</div>
-                            <div class="number count-to text-right" data-from="0"style="font-size: 15px" data-to="1225" data-speed="1000" data-fresh-interval="20"><?=$toatalsum;?></div>
+                            <div class="number count-to text-right" data-from="0"style="font-size: 15px" data-to="1225" data-speed="1000" data-fresh-interval="20"><?=number_format($toatalsum)?></div>
                         </div>
                     </div>
                 </div>

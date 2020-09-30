@@ -67,6 +67,15 @@ if($get !==NULL){
                             
                         </div> 
                         </div> 
+                        
+                             
+                                    <div class="form-group">
+                                        <div class="form-line">
+                                            <textarea rows="4" class="form-control no-resize"name="dec"placeholder="ملاحظات"><?php echo $value['dis'];?></textarea>
+                                        </div>
+                                    </div>
+                
+                        
                                <div id="msgcon"></div>
                         <div class="form-group" style="margin-right:18px">
                             <button type="submit" class="btn btn-success"> تحديث البيانات <i class='fa fa-plus'></i> </button>

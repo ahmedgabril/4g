@@ -12,7 +12,7 @@
                 
                 <div class="col-md-3"></div>
                 <div class="col-md-6 col-sm-12 col-xs-12">
-                    <div class="card " style="direction: rtl ;height:450px">
+                    <div class="card " style="direction: rtl ;height:550px">
                         <div class="header text-danger bg-deep-purple">
                             <h2 class="text-center">اضافه عميل </h2>
                          
@@ -53,6 +53,16 @@
                                     </div>
                                     <div class="help-info">ارقام فقط</div>
                                 </div>
+                                
+                            
+                           
+                                    <div class="form-group">
+                                        <div class="form-line">
+                                            <textarea rows="4" class="form-control no-resize" name="dec"placeholder="ملاحظات"></textarea>
+                                        </div>
+                                    </div>
+                       
+                                
                                 <div class="form-group" id="msg3"></div>
                                 <div class="form-group col-md-4" style="float: right">
                                     <button class="btn btn-primary waves-effect"  style="width: 150px;

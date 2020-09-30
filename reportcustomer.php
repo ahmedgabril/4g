@@ -51,7 +51,7 @@ $totalprem =  $data['totalrem']- $data1['sumamount'];
                         </div>
                         <div class="content">
                             <div class="text" style="font-size: 17px">اجمالى سعر المنتجات</div>
-                            <div class="number count-to text-right"style="font-size: 15px" data-from="0" data-to="257" data-speed="1000" data-fresh-interval="20"><?=$data['totalprice']?></div>
+                            <div class="number count-to text-right"style="font-size: 15px" data-from="0" data-to="257" data-speed="1000" data-fresh-interval="20"><?php echo number_format($data['totalprice'])?></div>
                         </div>
                     </div>
                 </div>
@@ -62,7 +62,7 @@ $totalprem =  $data['totalrem']- $data1['sumamount'];
                         </div>
                         <div class="content" >
                             <div class="text"style="font-size: 16px">المبالغ المدفوعه مقدما</div>
-                            <div class="number count-to text-right" style="font-size: 15px"data-from="0" data-to="243" data-speed="1000" data-fresh-interval="20"><?=$data['totalamount']?></div>
+                            <div class="number count-to text-right" style="font-size: 15px"data-from="0" data-to="243" data-speed="1000" data-fresh-interval="20"><?= number_format($data['totalamount'])?></div>
                         </div>
                     </div>
                 </div>
@@ -73,7 +73,7 @@ $totalprem =  $data['totalrem']- $data1['sumamount'];
                         </div>
                         <div class="content">
                             <div class="text"style="font-size: 16px">اجمالى المبالغ  المطلوب دفعها</div>
-                            <div class="number count-to text-right" data-from="0"style="font-size: 15px" data-to="1225" data-speed="1000" data-fresh-interval="20"><?=$data['totalrem']?></div>
+                            <div class="number count-to text-right" data-from="0"style="font-size: 15px" data-to="1225" data-speed="1000" data-fresh-interval="20"><?php echo number_format($data['totalrem'])?></div>
                         </div>
                     </div>
                 </div>
@@ -84,7 +84,7 @@ $totalprem =  $data['totalrem']- $data1['sumamount'];
                         </div>
                         <div class="content">
                             <div class="text"style="font-size: 16px">اجمالى عدد الاقساط المدفوعه</div>
-                            <div class="number count-to text-right" data-from="0"style="font-size: 15px" data-to="1225" data-speed="1000" data-fresh-interval="20"><?=$data1['totalcountprem']?></div>
+                            <div class="number count-to text-right" data-from="0"style="font-size: 15px" data-to="1225" data-speed="1000" data-fresh-interval="20"><?php echo number_format($data1['totalcountprem'])?></div>
                         </div>
                     </div>
                 </div>
@@ -95,7 +95,7 @@ $totalprem =  $data['totalrem']- $data1['sumamount'];
                         </div>
                         <div class="content">
                             <div class="text"style="font-size: 16px">اجمالى  مجموع الاقساط المدفوعه</div>
-                            <div class="number count-to text-right" data-from="0"style="font-size: 15px" data-to="1225" data-speed="1000" data-fresh-interval="20"><?=$data1['sumamount']?></div>
+                            <div class="number count-to text-right" data-from="0"style="font-size: 15px" data-to="1225" data-speed="1000" data-fresh-interval="20"><?php echo number_format($data1['sumamount'])?></div>
                         </div>
                     </div>
                 </div>
@@ -106,7 +106,7 @@ $totalprem =  $data['totalrem']- $data1['sumamount'];
                         </div>
                         <div class="content">
                             <div class="text"style="font-size: 16px">اجمالى  المبلغ المتبقى</div>
-                            <div class="number count-to text-right" data-from="0"style="font-size: 15px" data-to="1225" data-speed="1000" data-fresh-interval="20"><?=$totalprem;?></div>
+                            <div class="number count-to text-right" data-from="0"style="font-size: 15px" data-to="1225" data-speed="1000" data-fresh-interval="20"><?php echo number_format($totalprem)?></div>
                         </div>
                     </div>
                 </div>
@@ -117,7 +117,7 @@ $totalprem =  $data['totalrem']- $data1['sumamount'];
                         </div>
                         <div class="content">
                             <div class="text"style="font-size: 16px">صافى الربح</div>
-                            <div class="number count-to text-right" data-from="0"style="font-size: 15px" data-to="1225" data-speed="1000" data-fresh-interval="20"><?=$sumtotal;?></div>
+                            <div class="number count-to text-right" data-from="0"style="font-size: 15px" data-to="1225" data-speed="1000" data-fresh-interval="20"><?php echo number_format($sumtotal)?></div>
                         </div>
                     </div>
                 </div>

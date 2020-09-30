@@ -271,7 +271,7 @@ public function getidofpremmanth($id){
    $start = filter_var($date1,FILTER_SANITIZE_STRING);
    $end = filter_var($date2,FILTER_SANITIZE_STRING);
        
-  $this->mysqlpdo("SELECT prem_id,pr.date,phone,amount_manth,id,name,prem_manth,phone,prodect_name FROM premmanth AS pr INNER JOIN  prem as p ON  prems_id = prem_id INNER JOIN  customer  ON  customer_id = pr.c_name WHERE pr.date BETWEEN ? AND ?   AND amount_manth=0",[$start,$end]);
+  $this->mysqlpdo("SELECT prem_id,pr.date,phone,amount_manth,id,name,prem_manth,phone,prodect_name FROM premmanth AS pr INNER JOIN  prem as p ON  prems_id = prem_id INNER JOIN  customer  ON  customer_id = pr.c_name WHERE pr.date BETWEEN ? AND ?   AND amount_manth=0 LIMIT 50",[$start,$end]);
       if($this->count() > 0){
           
         $getd = $this->fetchalldata();

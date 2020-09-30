@@ -23,7 +23,7 @@ $f = new prem();
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
                          
 
-                    <div class="card getmanth" style="margin-top:100px;height:550px; direction: rtl" >
+                    <div class="card getmanth" style="margin-top:100px;height:250px; direction: rtl" >
                         <div class="header bg-red">
                             <h2>بحث يدوى على المتاخرين عن السداد</h2>
                                
@@ -34,7 +34,7 @@ $f = new prem();
                                 
      
                         <div class="col-sm-12 ">
-                            <form method="post" id="serc">  
+                            <form method="post" action="showlate.php" id="serc">  
                                      <div class="col-sm-4">
                                     <div class="form-group">
                                         <div class="form-line">
@@ -65,39 +65,7 @@ $f = new prem();
     
                         </div>
                            <div class=" col-sm-12 "> 
-                           <div class="table-responsive">
-                                <table class="table table-striped  table-hover " style="background-color: #fff;">
-                                      <thead style="color:#000">
-                                            <tr>
-                                        <th style="color:#000">#</th>
-                                        <th>اسم العميل</th>
-                                        <th>اسم المنتج</th>
-                                        <th>المبلغ المطلوب </th>
-                                        <th>المبلغ المدفوع</th>
-                                        <th>رقم الهاتف</th>
-                                        <th>التاريخ</th>
-                                        <th>الصفحه الشخصيه</th>
-
-                                        
-                                    </tr>
-                                </thead>
-                                    <tfoot>
-                                        <tr>
-                                        <th style="color:#000">#</th>
-                                        <th>اسم العميل</th>
-                                        <th>اسم المنتج</th>
-                                        <th>المبلغ المطلوب </th>
-                                        <th>المبلغ المدفوع</th>
-                                        <th>رقم الهاتف</th>
-                                        <th>التاريخ</th>
-                                        <th>الصفحه الشخصيه</th>
-
-                                        
-                                    </tr>
-                                    </tfoot>
-                                    <tbody class="msgser">
-                                  </tbody>
-                                </table>
+                     
                             </div>
 
                             </div>

@@ -3,13 +3,14 @@
 
 class member  extends pdocon{
 
-    private $name,$idnumber,$phone,$id,$date;
-    public function getinputvalue($name,$idnumber,$phone,$date,$id=null){
+    private $name,$idnumber,$phone,$id,$date,$dec;
+    public function getinputvalue($name,$idnumber,$phone,$date,$dec,$id=null){
         $this->name= filter_var($name,FILTER_SANITIZE_STRING);
         $this->idnumber= filter_var($idnumber,FILTER_SANITIZE_NUMBER_INT);
         $this->phone= filter_var($phone,FILTER_SANITIZE_NUMBER_INT);
         $this->id= filter_var($id,FILTER_SANITIZE_NUMBER_INT);
         $this->date= filter_var($date,FILTER_SANITIZE_STRING);
+        $this->dec = filter_var($dec,FILTER_SANITIZE_STRING);
       
     }
     
@@ -35,7 +36,7 @@ class member  extends pdocon{
       private function addmembger(){
           
 
-       $this->mysqlpdo("INSERT INTO customer (name,id_number,phone,date) VALUES(?,?,?,?)",[$this->name,$this->idnumber,$this->phone, $this->date]);
+       $this->mysqlpdo("INSERT INTO customer (name,id_number,phone,date,dis) VALUES(?,?,?,?,?)",[$this->name,$this->idnumber,$this->phone, $this->date,$this->dec]);
         
         if($this->count()> 0){
             $_SESSION['addcustomer'] = TRUE;
@@ -130,7 +131,7 @@ class member  extends pdocon{
 /***************************************************************************************/
       private function updatecustor(){
             
-             if($this->mysqlpdo("UPDATE  customer SET phone = ?,id_number = ?,date= ? WHERE customer_id=?",[$this->phone, $this->idnumber,$this->date, $this->id ])
+             if($this->mysqlpdo("UPDATE  customer SET phone = ?,id_number = ?,date= ?,dis = ? WHERE customer_id= ?",[$this->phone, $this->idnumber,$this->date, $this->dec,$this->id ])
                    ){
                  
                 echo msg::setmsg("تم تحديث البيانات بنجاح","success");
@@ -144,7 +145,7 @@ class member  extends pdocon{
 /***************************************************************************************/
       private function updatecustor1(){
             
-             if($this->mysqlpdo("UPDATE  customer SET name=?,phone = ?,id_number = ?,date =? WHERE customer_id=?",[$this->name,$this->phone, $this->idnumber, $this->date, $this->id])
+             if($this->mysqlpdo("UPDATE  customer SET name=?,phone = ?,id_number = ?,date =?,dec =? WHERE customer_id=?",[$this->name,$this->phone, $this->idnumber, $this->date, $this->dis, $this->id])
                    ){
                  
                 echo msg::setmsg("تم تحديث البيانات بنجاح","success");
